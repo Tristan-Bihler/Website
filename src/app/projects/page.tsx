@@ -24,7 +24,7 @@ const projects = [
 
 export default function ProjectsPage() {
   return (
-    <div className="space-y-12">
+    <div className="max-w-5xl mx-auto px-6 py-10 space-y-12">
       <div>
         <h1 className="text-4xl font-bold mb-3">Projects</h1>
         <p className="text-gray-400">Dinge, die ich gebaut habe oder gerade baue.</p>

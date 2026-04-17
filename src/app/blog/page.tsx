@@ -26,7 +26,7 @@ const posts = [
 
 export default function BlogPage() {
   return (
-    <div className="space-y-12">
+    <div className="max-w-5xl mx-auto px-6 py-10 space-y-12">
       <div>
         <h1 className="text-4xl font-bold mb-3">Blog</h1>
         <p className="text-gray-400">Gedanken, Erfahrungen und Geschichten.</p>

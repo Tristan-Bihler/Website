@@ -9,7 +9,7 @@ const pictures = [
 
 export default function PicturesPage() {
   return (
-    <div className="space-y-12">
+    <div className="max-w-5xl mx-auto px-6 py-10 space-y-12">
       <div>
         <h1 className="text-4xl font-bold mb-3">Pictures</h1>
         <p className="text-gray-400">Momente, die ich festgehalten habe.</p>
