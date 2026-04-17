@@ -14,7 +14,7 @@ export default function Home() {
           Hi, ich bin{" "}
           <span className="text-[var(--red)]">Tristan Bihler</span>
         </h1>
-        <p className="text-lg text-gray-600 max-w-xl leading-relaxed">
+        <p className="text-lg text-gray-400 max-w-xl leading-relaxed">
           Hier teile ich meine Gedanken, Projekte und Fotos. Schau dich gerne um!
         </p>
         <div className="flex gap-4 flex-wrap">
@@ -65,13 +65,13 @@ export default function Home() {
             <Link
               key={href}
               href={href}
-              className="group block p-6 bg-white rounded-xl border border-[var(--cream-dark)] hover:border-[var(--gold)] hover:shadow-md transition-all"
+              className="group block p-6 bg-[var(--card-bg)] rounded-xl border border-[var(--cream-dark)] hover:border-[var(--gold)] hover:shadow-md transition-all"
             >
               <div className="text-3xl mb-3">{icon}</div>
               <h3 className="text-lg font-semibold mb-2 group-hover:text-[var(--red)] transition-colors">
                 {title}
               </h3>
-              <p className="text-sm text-gray-500">{desc}</p>
+              <p className="text-sm text-gray-400">{desc}</p>
             </Link>
           ))}
         </div>

@@ -12,7 +12,7 @@ export default function PicturesPage() {
     <div className="space-y-12">
       <div>
         <h1 className="text-4xl font-bold mb-3">Pictures</h1>
-        <p className="text-gray-500">Momente, die ich festgehalten habe.</p>
+        <p className="text-gray-400">Momente, die ich festgehalten habe.</p>
         <div className="mt-4 h-1 w-16 bg-[var(--gold)] rounded-full" />
       </div>
 
@@ -27,7 +27,7 @@ export default function PicturesPage() {
               <span className="text-5xl opacity-40">📷</span>
             </div>
             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors rounded-xl" />
-            <div className="p-4 bg-white">
+            <div className="p-4 bg-[var(--card-bg)]">
               <p className="font-semibold text-sm">{pic.title}</p>
               <p className="text-xs text-gray-400 mt-0.5">{pic.location}</p>
             </div>

@@ -4,21 +4,21 @@ const projects = [
     description: "Diese persönliche Website — gebaut mit Next.js, TypeScript und Tailwind CSS.",
     tags: ["Next.js", "TypeScript", "Tailwind"],
     status: "In Arbeit",
-    statusColor: "bg-yellow-100 text-yellow-700",
+    statusColor: "bg-yellow-900/40 text-yellow-300",
   },
   {
     title: "Projekt Alpha",
     description: "Eine kurze Beschreibung deines Projekts. Was hast du gebaut, welches Problem löst es?",
     tags: ["React", "Node.js"],
     status: "Fertig",
-    statusColor: "bg-green-100 text-green-700",
+    statusColor: "bg-green-900/40 text-green-300",
   },
   {
     title: "Projekt Beta",
     description: "Beschreibe hier ein weiteres Projekt. Technologien, Ziele und Ergebnisse.",
     tags: ["Python", "API"],
     status: "Planung",
-    statusColor: "bg-blue-100 text-blue-700",
+    statusColor: "bg-blue-900/40 text-blue-300",
   },
 ];
 
@@ -27,7 +27,7 @@ export default function ProjectsPage() {
     <div className="space-y-12">
       <div>
         <h1 className="text-4xl font-bold mb-3">Projects</h1>
-        <p className="text-gray-500">Dinge, die ich gebaut habe oder gerade baue.</p>
+        <p className="text-gray-400">Dinge, die ich gebaut habe oder gerade baue.</p>
         <div className="mt-4 h-1 w-16 bg-[var(--gold)] rounded-full" />
       </div>
 
@@ -35,7 +35,7 @@ export default function ProjectsPage() {
         {projects.map((project) => (
           <div
             key={project.title}
-            className="bg-white rounded-xl border border-[var(--cream-dark)] p-6 hover:border-[var(--gold)] hover:shadow-md transition-all"
+            className="bg-[var(--card-bg)] rounded-xl border border-[var(--cream-dark)] p-6 hover:border-[var(--gold)] hover:shadow-md transition-all"
           >
             <div className="flex items-start justify-between gap-4 flex-wrap mb-3">
               <h2 className="text-xl font-semibold">{project.title}</h2>
@@ -43,7 +43,7 @@ export default function ProjectsPage() {
                 {project.status}
               </span>
             </div>
-            <p className="text-gray-500 text-sm leading-relaxed mb-4">{project.description}</p>
+            <p className="text-gray-400 text-sm leading-relaxed mb-4">{project.description}</p>
             <div className="flex gap-2 flex-wrap">
               {project.tags.map((tag) => (
                 <span

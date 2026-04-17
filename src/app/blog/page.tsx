@@ -29,7 +29,7 @@ export default function BlogPage() {
     <div className="space-y-12">
       <div>
         <h1 className="text-4xl font-bold mb-3">Blog</h1>
-        <p className="text-gray-500">Gedanken, Erfahrungen und Geschichten.</p>
+        <p className="text-gray-400">Gedanken, Erfahrungen und Geschichten.</p>
         <div className="mt-4 h-1 w-16 bg-[var(--gold)] rounded-full" />
       </div>
 
@@ -37,7 +37,7 @@ export default function BlogPage() {
         {posts.map((post) => (
           <article
             key={post.slug}
-            className="group bg-white rounded-xl border border-[var(--cream-dark)] p-6 hover:border-[var(--gold)] hover:shadow-md transition-all"
+            className="group bg-[var(--card-bg)] rounded-xl border border-[var(--cream-dark)] p-6 hover:border-[var(--gold)] hover:shadow-md transition-all"
           >
             <div className="flex items-center gap-3 mb-3 flex-wrap">
               <time className="text-xs text-gray-400 font-medium">{post.date}</time>
@@ -53,7 +53,7 @@ export default function BlogPage() {
             <h2 className="text-xl font-semibold mb-2 group-hover:text-[var(--red)] transition-colors">
               {post.title}
             </h2>
-            <p className="text-gray-500 text-sm leading-relaxed">{post.excerpt}</p>
+            <p className="text-gray-400 text-sm leading-relaxed">{post.excerpt}</p>
             <div className="mt-4">
               <span className="text-sm font-medium text-[var(--red)] hover:text-[var(--red-dark)] cursor-pointer">
                 Weiterlesen →
