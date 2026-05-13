@@ -43,8 +43,8 @@ title: "Home"
   <section class="section">
     <h2 class="section-title">Neueste Projekte</h2>
     <div class="card-grid">
-      {% assign recent_projects = site.projects | sort: 'date' | reverse | limit: 3 %}
-      {% for project in recent_projects %}
+      {% assign recent_projects = site.projects | sort: 'date' | reverse %}
+      {% for project in recent_projects limit:3 %}
       <div class="card">
         <div class="card-image-placeholder">{{ project.icon | default: '🛠️' }}</div>
         <div class="card-body">
@@ -68,8 +68,8 @@ title: "Home"
   <section class="section">
     <h2 class="section-title">Letzte Reisen</h2>
     <div class="card-grid">
-      {% assign recent_travels = site.travels | sort: 'date' | reverse | limit: 3 %}
-      {% for trip in recent_travels %}
+      {% assign recent_travels = site.travels | sort: 'date' | reverse %}
+      {% for trip in recent_travels limit:3 %}
       <div class="card">
         <div class="card-image-placeholder">{{ trip.icon | default: '✈️' }}</div>
         <div class="card-body">

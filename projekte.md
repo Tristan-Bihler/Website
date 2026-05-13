@@ -37,7 +37,8 @@ permalink: /projekte/
       {% endfor %}
     </div>
 
-    {% if site.projects.size == 0 %}
+    {% assign project_count = site.projects | size %}
+    {% if project_count == 0 %}
     <p style="color: var(--text-muted); font-style: italic;">
       Noch keine Projekte vorhanden. Lege eine neue Datei in <code>_projects/</code> an!
     </p>

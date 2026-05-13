@@ -14,7 +14,8 @@ permalink: /reisen/
     </p>
 
     {% assign all_countries = site.travels | map: 'country' | uniq | compact %}
-    {% if all_countries.size > 0 %}
+    {% assign country_count = all_countries | size %}
+    {% if country_count > 0 %}
     <div class="country-bar">
       {% for c in all_countries %}
       <span class="country-chip">{{ c }}</span>
@@ -41,7 +42,8 @@ permalink: /reisen/
       {% endfor %}
     </div>
 
-    {% if site.travels.size == 0 %}
+    {% assign travel_count = site.travels | size %}
+    {% if travel_count == 0 %}
     <p style="color: var(--text-muted); font-style: italic;">
       Noch keine Reisen vorhanden. Lege eine neue Datei in <code>_travels/</code> an!
     </p>

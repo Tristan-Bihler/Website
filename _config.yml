@@ -1,0 +1,37 @@
+title: "Tristan Bihler"
+description: "Portfolio von Tristan Bihler – Projekte, Reisen & mehr"
+baseurl: "/Website"
+url: "https://tristan-bihler.github.io"
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projekte/:name/
+  travels:
+    output: true
+    permalink: /reisen/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+      type: "travels"
+    values:
+      layout: "travel"
+
+# Markdown
+markdown: kramdown
+highlighter: rouge
+
+# Ausschließen
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
