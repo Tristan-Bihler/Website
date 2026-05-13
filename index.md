@@ -4,7 +4,7 @@ title: "Home"
 ---
 
 <section class="hero">
-  <h1>Hallo, ich bin <span>Dein Name</span></h1>
+  <h1>Hallo, ich bin <span>Tristan Bihler</span></h1>
   <p class="hero-subtitle">
     Entwickler, Entdecker und leidenschaftlicher Tüftler.
     Hier teile ich meine Projekte und Reiseerlebnisse.
@@ -24,7 +24,7 @@ title: "Home"
       <div class="avatar-placeholder">🧑</div>
       <div>
         <p>
-          Willkommen auf meinem Portfolio! Ich bin <strong>Dein Name</strong>, ein leidenschaftlicher
+          Willkommen auf meinem Portfolio! Ich bin <strong>Tristan Bihler</strong>, ein leidenschaftlicher
           Entwickler und Reisender aus Deutschland. Ich baue gerne Dinge – von kleinen
           Skripten bis hin zu vollständigen Web-Applikationen.
         </p>
