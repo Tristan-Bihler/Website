@@ -5,17 +5,17 @@
    Farbpalette
    ============================================================ */
 :root {
-  --white:        #FFFFFF;
-  --bg:           #F9F9F7;
-  --surface:      #FFFFFF;
-  --orange:       #C85A1A;
-  --orange-light: #E07040;
-  --orange-glow:  rgba(200, 90, 26, 0.08);
-  --text:         #1A1A1A;
-  --text-muted:   #6B6B6B;
-  --border:       #E5E5E5;
-  --border-dark:  #D0D0D0;
-  --dark:         #1A1A1A;
+  --white:        #FDF6E3;
+  --bg:           #FAF0D7;
+  --surface:      #FDF6E3;
+  --orange:       #C8621A;
+  --orange-light: #E07840;
+  --orange-glow:  rgba(200, 98, 26, 0.10);
+  --text:         #2C1A08;
+  --text-muted:   #8B6A45;
+  --border:       #E2CFA8;
+  --border-dark:  #C8AA78;
+  --dark:         #1E1208;
 }
 
 /* ============================================================
@@ -145,7 +145,7 @@ main {
    Navigation – hell, kein schwarzer Balken
    ============================================================ */
 .site-nav {
-  background-color: var(--white);
+  background-color: var(--surface);
   border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
@@ -211,7 +211,7 @@ main {
    Hero
    ============================================================ */
 .hero {
-  background: var(--white);
+  background: var(--surface);
   border-bottom: 1px solid var(--border);
   padding: 4rem 1.5rem;
   text-align: center;
@@ -488,7 +488,7 @@ main {
 @media (max-width: 640px) {
   .hero h1 { font-size: 1.9rem; }
   .hero { padding: 2.5rem 1rem; }
-  .nav-links { display: none; flex-direction: column; background: var(--white); padding: 1rem 1.5rem; border-top: 1px solid var(--border); }
+  .nav-links { display: none; flex-direction: column; background: var(--surface); padding: 1rem 1.5rem; border-top: 1px solid var(--border); }
   .nav-links.open { display: flex; }
   .nav-toggle { display: flex; }
   .nav-inner { flex-wrap: wrap; gap: 0.5rem; }
